@@ -1,16 +1,65 @@
 $green: #499A18
 $orange: #E06733
 $gray: #717171
-$dark-grey: #717171
+$dark-grey: #636060
 $Smoky-white: #EDF2EC
 $black: #010201
 
-body 
+@mixin inika-font
+    font-family: 'Inika', serif
+    font-weight: 400
+
+.container
+    width: 1440px
+
+.wrapper
+    max-width: 1219px
+    margin: 0 auto
+
+@mixin inter-font
     font-family: 'Inter', sans-serif
-    
-* 
+    font-weight: 400
+    color: $gray
+
+body
+    @include inter-font
+
+*
     padding: 0
     margin: 0
 
+.header
+    background: $Smoky-white
+    .container
+        .wrapper
+            .header_wrapper
+                display: flex
+                .header_logo
+                    img.logo
+                        margin-top: 52px
+                nav
+                    margin-top: 52px
+                    margin-left: 688.83px
+                    ul
+                        display: flex
+                        li
+                            list-style-type: none
+                            padding-left: 46px
+                            a
+                                @include inika-font
+                                color: $black
+                                font-size: 16px
+                                text-decoration: none
+                                line-height: 50px
+                        li:first-child 
+                            padding-left: 0px
+                            a
+                                @include inika-font
+                                color: $black
+                                font-size: 16px
+                                text-decoration: none
+                                line-height: 50px
 
-
+main
+    .welcome
+        background: $Smoky-white

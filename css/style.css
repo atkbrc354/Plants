@@ -1,8 +1,67 @@
+.container {
+  width: 1440px;
+}
+
+.wrapper {
+  max-width: 1219px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #717171;
 }
 
 * {
   padding: 0;
   margin: 0;
+}
+
+.header {
+  background: #EDF2EC;
+}
+.header .container .wrapper .header_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .container .wrapper .header_wrapper .header_logo img.logo {
+  margin-top: 52px;
+}
+.header .container .wrapper .header_wrapper nav {
+  margin-top: 52px;
+  margin-left: 688.83px;
+}
+.header .container .wrapper .header_wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .container .wrapper .header_wrapper nav ul li {
+  list-style-type: none;
+  padding-left: 46px;
+}
+.header .container .wrapper .header_wrapper nav ul li a {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  color: #010201;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 50px;
+}
+.header .container .wrapper .header_wrapper nav ul li:first-child {
+  padding-left: 0px;
+}
+.header .container .wrapper .header_wrapper nav ul li:first-child a {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  color: #010201;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+main .welcome {
+  background: #EDF2EC;
 }
