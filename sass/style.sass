@@ -51,6 +51,10 @@ body
                                 font-size: 16px
                                 text-decoration: none
                                 line-height: 50px
+                                transition: all 300ms
+                                &:hover
+                                    color: $orange
+                                    transition: all 300ms
                         li:first-child 
                             padding-left: 0px
                             a
@@ -59,7 +63,42 @@ body
                                 font-size: 16px
                                 text-decoration: none
                                 line-height: 50px
+                                transition: all 300ms
+                                &:hover
+                                    color: $orange
+                                    transition: all 300ms 
 
 main
     .welcome
         background: $Smoky-white
+        .container 
+            .wrapper
+                .welcome_wrapper
+                    display: flex
+                    justify-content: space-between
+                    img.leafs
+                        margin-top: 62px
+                    .welcime-text
+                        h1.welcome-title
+                            font-weight: 700
+                            margin-top: 98px
+                            color: $gray
+                            width: 549px
+                            font-size: 45px
+                            line-height: 50px
+                            span
+                                color: $green
+                        p.welcome-description
+                            font-size: 20px
+                            line-height: 35px
+                            color: $dark-grey
+                            width: 525.44px
+                            margin-bottom: 48px
+                        a.btn
+                            color: #000
+                            display: inline-block
+                            border: 2px solid $orange
+                            text-decoration: none
+                            padding: 14px 27px
+                            font-size: 16px
+                            line-height: 20px                
