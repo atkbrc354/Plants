@@ -207,25 +207,29 @@ main
                             border-radius: 20px
                             display: flex
                             flex-direction: column
-                            a.btn
-                                position: relative
+                            .block-btn
                                 margin-top: 34px
-                                margin-left: 41px
-                                display: inline-block
-                                box-sizing: border-box
-                                width: 250px
-                                font-weight: 700
-                                text-decoration: none
-                                color: #000
-                                font-size: 20px
-                                line-height: 20px
-                                padding: 16px 110px 16px 16px
-                                background: #EDF2EC
-                                border-radius: 20px
-                                span
-                                    position: absolute
-                                    right: 40px
-                                    top: 17px
+                                a.btn
+                                    position: relative
+                                    margin-left: 41px
+                                    display: inline-block
+                                    box-sizing: border-box
+                                    width: 250px
+                                    font-weight: 700
+                                    text-decoration: none
+                                    color: #000
+                                    font-size: 20px
+                                    line-height: 20px
+                                    padding: 16px 110px 16px 16px
+                                    background: #EDF2EC
+                                    border-radius: 20px
+                                    margin-bottom: 32px
+                                    span
+                                        position: absolute
+                                        right: 40px
+                                        top: 17px
+                                a:last-child
+                                    margin-bottom: 0
                     .helps-block-right
                         position: relative
                         h2.helps-title
@@ -258,3 +262,68 @@ main
                             position: absolute
                             right: 0px
                             margin-top: 127px
+    section.contacts
+        background: $Smoky-white
+        .container
+            .wrapper
+                .contact-wrap
+                    display: flex
+                    justify-content: space-between
+                    img.contact_woman
+                        margin-top: 53px
+                    h2.contacts-title
+                        margin-top: 60px
+                        @include inika-font
+                        font-size: 40px
+                        font-weight: 700
+                        line-height: 52px
+                        color: $green
+                    .input-icons
+                        input.input-city
+                            margin-top: 148px
+                            width: 450px
+                            height: 50px
+                            background: #D6E7D2
+                            border: 0px
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                            border-radius: 0px
+                            font-size: 20px
+                            line-height: 40px
+                            padding-left: 20px
+                            letter-spacing: 0.05em
+                            color: $gray
+                            outline: none
+                            input:placeholder
+                                color: $gray
+                        span
+                            position: relative
+                            right: 51px
+                            top: 165px
+                            img.accordion_btn
+                                position: absolute               
+footer.footer
+    .container
+        .wrapper
+            .footer-wrap
+                display: flex
+                justify-content: space-between
+                .footer-data
+                    margin-top: 40px
+                    margin-bottom: 40px
+                    color: #000
+                    font-size: 20px
+                    line-height: 50px
+                p.footer-text
+                    margin-top: 40px
+                    font-size: 20px
+                    line-height: 50px
+                    color: #000
+                .footer-icons
+                    margin-top: 51.67px
+                    img.icons
+                        margin-left: 30.68px
+                    img:first-child
+                        margin-left: 0
+
+
+                            

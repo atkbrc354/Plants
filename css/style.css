@@ -257,9 +257,11 @@ main section.prices .container .wrapper .prices-block .prices-block-left .prices
       -ms-flex-direction: column;
           flex-direction: column;
 }
-main section.prices .container .wrapper .prices-block .prices-block-left .prices_item a.btn {
-  position: relative;
+main section.prices .container .wrapper .prices-block .prices-block-left .prices_item .block-btn {
   margin-top: 34px;
+}
+main section.prices .container .wrapper .prices-block .prices-block-left .prices_item .block-btn a.btn {
+  position: relative;
   margin-left: 41px;
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -273,11 +275,15 @@ main section.prices .container .wrapper .prices-block .prices-block-left .prices
   padding: 16px 110px 16px 16px;
   background: #EDF2EC;
   border-radius: 20px;
+  margin-bottom: 32px;
 }
-main section.prices .container .wrapper .prices-block .prices-block-left .prices_item a.btn span {
+main section.prices .container .wrapper .prices-block .prices-block-left .prices_item .block-btn a.btn span {
   position: absolute;
   right: 40px;
   top: 17px;
+}
+main section.prices .container .wrapper .prices-block .prices-block-left .prices_item .block-btn a:last-child {
+  margin-bottom: 0;
 }
 main section.prices .container .wrapper .prices-block .helps-block-right {
   position: relative;
@@ -317,4 +323,85 @@ main section.prices .container .wrapper .prices-block .helps-block-right img.lea
   position: absolute;
   right: 0px;
   margin-top: 127px;
+}
+main section.contacts {
+  background: #EDF2EC;
+}
+main section.contacts .container .wrapper .contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section.contacts .container .wrapper .contact-wrap img.contact_woman {
+  margin-top: 53px;
+}
+main section.contacts .container .wrapper .contact-wrap h2.contacts-title {
+  margin-top: 60px;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #499A18;
+}
+main section.contacts .container .wrapper .contact-wrap .input-icons input.input-city {
+  margin-top: 148px;
+  width: 450px;
+  height: 50px;
+  background: #D6E7D2;
+  border: 0px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  font-size: 20px;
+  line-height: 40px;
+  padding-left: 20px;
+  letter-spacing: 0.05em;
+  color: #717171;
+  outline: none;
+}
+main section.contacts .container .wrapper .contact-wrap .input-icons input.input-city input:placeholder {
+  color: #717171;
+}
+main section.contacts .container .wrapper .contact-wrap .input-icons span {
+  position: relative;
+  right: 51px;
+  top: 165px;
+}
+main section.contacts .container .wrapper .contact-wrap .input-icons span img.accordion_btn {
+  position: absolute;
+}
+
+footer.footer .container .wrapper .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer.footer .container .wrapper .footer-wrap .footer-data {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #000;
+  font-size: 20px;
+  line-height: 50px;
+}
+footer.footer .container .wrapper .footer-wrap p.footer-text {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000;
+}
+footer.footer .container .wrapper .footer-wrap .footer-icons {
+  margin-top: 51.67px;
+}
+footer.footer .container .wrapper .footer-wrap .footer-icons img.icons {
+  margin-left: 30.68px;
+}
+footer.footer .container .wrapper .footer-wrap .footer-icons img:first-child {
+  margin-left: 0;
 }
