@@ -149,3 +149,77 @@ main section.about .container .wrapper .about-block .about-img img.about-img_hou
   margin-top: 93px;
   margin-bottom: 94px;
 }
+main section.service {
+  background: #EDF2EC;
+  padding-bottom: 66px;
+}
+main section.service .container .wrapper .service-block_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main section.service .container .wrapper .service-block_top h2.service-title {
+  width: 306px;
+  margin-top: 40px;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  color: #499A18;
+  font-size: 40px;
+  line-height: 52px;
+}
+main section.service .container .wrapper .service-block_top .btn-block {
+  margin-left: 142px;
+}
+main section.service .container .wrapper .service-block_top .btn-block a.btn {
+  margin-top: 69px;
+  margin-left: 38px;
+  border-radius: 5px;
+  color: #000;
+  display: inline-block;
+  border: 1px solid #E06733;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 105px;
+}
+main section.service .container .wrapper .service-block_top .btn-block a:first-child {
+  margin-left: 0px;
+}
+main section.service .container .wrapper .service-block_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main section.service .container .wrapper .service-block_cards .service-block_card {
+  width: 330px;
+}
+main section.service .container .wrapper .service-block_cards .service-block_card img.first {
+  border-radius: 20px 20px 0px 0px;
+}
+main section.service .container .wrapper .service-block_cards .service-block_card .service-block-text {
+  margin-top: -5px;
+  width: 330px;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 55px;
+}
+main section.service .container .wrapper .service-block_cards .service-block_card .service-block-text h3.service-card-title {
+  padding-top: 10px;
+  color: #E06733;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+main section.service .container .wrapper .service-block_cards .service-block_card .service-block-text p.service-card-description {
+  text-align: center;
+  margin-bottom: 36px;
+}
