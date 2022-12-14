@@ -69,7 +69,7 @@ body
                                     transition: all 300ms 
 
 main
-    .welcome
+    section.welcome
         background: $Smoky-white
         .container 
             .wrapper
@@ -101,4 +101,33 @@ main
                             text-decoration: none
                             padding: 14px 27px
                             font-size: 16px
-                            line-height: 20px                
+                            line-height: 20px
+                            margin-bottom: 94px     
+    section.about
+        .container
+            .wrapper
+                .about-block
+                    display: flex
+                    justify-content: space-between
+                    .about-text_block
+                        .about-title
+                            margin-top: 161px
+                            font-size: 40px
+                            @include inika-font
+                            line-height: 52px
+                            width: 463px
+                            color: $orange
+                            margin-bottom: 40px
+                            span
+                                color: $green
+                        p.about-description
+                            width: 605px
+                            font-size: 20px
+                            line-height: 30px
+                            color: $dark-grey
+                    .about-img
+                        img.about-img_houseplant
+                            margin-top: 93px
+                            margin-bottom: 94px
+
+
