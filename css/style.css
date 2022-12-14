@@ -223,3 +223,98 @@ main section.service .container .wrapper .service-block_cards .service-block_car
   text-align: center;
   margin-bottom: 36px;
 }
+main section.prices .container .wrapper .prices-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section.prices .container .wrapper .prices-block .prices-block-left {
+  margin-bottom: 115px;
+}
+main section.prices .container .wrapper .prices-block .prices-block-left h2.price-title {
+  margin-top: 40px;
+  font-size: 40px;
+  color: #010201;
+  font-weight: 700;
+  line-height: 50px;
+}
+main section.prices .container .wrapper .prices-block .prices-block-left .prices_item {
+  margin-top: 60px;
+  border: 1px solid #E3E1D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 332px;
+  height: 282.01px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main section.prices .container .wrapper .prices-block .prices-block-left .prices_item a.btn {
+  position: relative;
+  margin-top: 34px;
+  margin-left: 41px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 250px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 16px 110px 16px 16px;
+  background: #EDF2EC;
+  border-radius: 20px;
+}
+main section.prices .container .wrapper .prices-block .prices-block-left .prices_item a.btn span {
+  position: absolute;
+  right: 40px;
+  top: 17px;
+}
+main section.prices .container .wrapper .prices-block .helps-block-right {
+  position: relative;
+}
+main section.prices .container .wrapper .prices-block .helps-block-right h2.helps-title {
+  margin-top: 38px;
+  font-size: 40px;
+  width: 452px;
+  text-align: right;
+  font-weight: 700;
+  line-height: 50px;
+  color: #010201;
+}
+main section.prices .container .wrapper .prices-block .helps-block-right h2.helps-title span {
+  color: #499A18;
+}
+main section.prices .container .wrapper .prices-block .helps-block-right a.btn {
+  position: absolute;
+  right: 0px;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  margin-top: 50px;
+  border-radius: 5px;
+  color: #E06733;
+  display: inline-block;
+  border: 1px solid #E06733;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  padding: 12px 33.96px 12px 30px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 51px;
+}
+main section.prices .container .wrapper .prices-block .helps-block-right img.leafs-prices {
+  position: absolute;
+  right: 0px;
+  margin-top: 127px;
+}
