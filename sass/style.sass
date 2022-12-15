@@ -11,6 +11,7 @@ $black: #010201
 
 .container
     width: 1440px
+    margin: auto
 
 .wrapper
     max-width: 1219px
@@ -23,6 +24,9 @@ $black: #010201
 
 body
     @include inter-font
+
+html
+    scroll-behavior: smooth
 
 *
     padding: 0
@@ -103,6 +107,10 @@ main
                             font-size: 16px
                             line-height: 20px
                             margin-bottom: 94px
+                            transition: all 300ms
+                            &:hover
+                                transition: all 300ms
+                                color: $orange
     section.about
         .container
             .wrapper
@@ -158,8 +166,16 @@ main
                             font-size: 16px
                             line-height: 20px
                             margin-bottom: 105px
+                            transition: all 300ms
+                            &:hover
+                                transition: all 300ms
+                                color: $orange
                         a:first-child
                             margin-left: 0px
+                            transition: all 300ms
+                            &:hover
+                                transition: all 300ms
+                                color: $orange
                 .service-block_cards
                     display: flex
                     justify-content: space-between
@@ -174,7 +190,7 @@ main
                             border: 1px solid #E3E1D5
                             border-radius: 0px 0px 20px 20px
                             margin-bottom: 55px
-                            h3.service-card-title
+                            h4.service-card-title
                                 padding-top: 10px
                                 color: $orange
                                 text-align: center
@@ -224,6 +240,7 @@ main
                                     background: #EDF2EC
                                     border-radius: 20px
                                     margin-bottom: 32px
+
                                     span
                                         position: absolute
                                         right: 40px
@@ -232,7 +249,7 @@ main
                                     margin-bottom: 0
                     .helps-block-right
                         position: relative
-                        h2.helps-title
+                        h3.helps-title
                             margin-top: 38px
                             font-size: 40px
                             width: 452px
@@ -258,6 +275,10 @@ main
                             line-height: 26px
                             font-weight: 700
                             margin-bottom: 51px
+                            transition: all 300ms
+                            &:hover
+                                transition: all 300ms
+                                color: $black
                         img.leafs-prices
                             position: absolute
                             right: 0px
@@ -290,6 +311,7 @@ main
                             font-size: 20px
                             line-height: 40px
                             padding-left: 20px
+                            padding-right: 58px
                             letter-spacing: 0.05em
                             color: $gray
                             outline: none
@@ -300,30 +322,37 @@ main
                             right: 51px
                             top: 165px
                             img.accordion_btn
-                                position: absolute               
+                                position: absolute
 footer.footer
     .container
         .wrapper
             .footer-wrap
                 display: flex
                 justify-content: space-between
-                .footer-data
-                    margin-top: 40px
-                    margin-bottom: 40px
-                    color: #000
-                    font-size: 20px
-                    line-height: 50px
-                p.footer-text
-                    margin-top: 40px
-                    font-size: 20px
-                    line-height: 50px
-                    color: #000
+                a
+                    text-decoration: none
+                    .footer-data
+                        margin-top: 40px
+                        margin-bottom: 40px
+                        color: #000
+                        font-size: 20px
+                        line-height: 50px
+                a
+                    text-decoration: none
+                    p.footer-text
+                        margin-top: 40px
+                        font-size: 20px
+                        line-height: 50px
+                        color: #000
                 .footer-icons
                     margin-top: 51.67px
-                    img.icons
-                        margin-left: 30.68px
-                    img:first-child
-                        margin-left: 0
-
-
-                            
+                    display: flex
+                    ul
+                        list-style-type: none
+                        li
+                            margin-left: 30.68px
+                            a
+                                img.icons
+                                    margin-left: 30.68px
+                                img:first-child
+                                    margin-left: 0

@@ -1,5 +1,6 @@
 .container {
   width: 1440px;
+  margin: auto;
 }
 
 .wrapper {
@@ -11,6 +12,10 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: #717171;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -117,6 +122,13 @@ main section.welcome .container .wrapper .welcome_wrapper .welcime-text a.btn {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 94px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+main section.welcome .container .wrapper .welcome_wrapper .welcime-text a.btn:hover {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  color: #E06733;
 }
 main section.about .container .wrapper .about-block {
   display: -webkit-box;
@@ -184,9 +196,23 @@ main section.service .container .wrapper .service-block_top .btn-block a.btn {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 105px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+main section.service .container .wrapper .service-block_top .btn-block a.btn:hover {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  color: #E06733;
 }
 main section.service .container .wrapper .service-block_top .btn-block a:first-child {
   margin-left: 0px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+main section.service .container .wrapper .service-block_top .btn-block a:first-child:hover {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  color: #E06733;
 }
 main section.service .container .wrapper .service-block_cards {
   display: -webkit-box;
@@ -211,7 +237,7 @@ main section.service .container .wrapper .service-block_cards .service-block_car
   border-radius: 0px 0px 20px 20px;
   margin-bottom: 55px;
 }
-main section.service .container .wrapper .service-block_cards .service-block_card .service-block-text h3.service-card-title {
+main section.service .container .wrapper .service-block_cards .service-block_card .service-block-text h4.service-card-title {
   padding-top: 10px;
   color: #E06733;
   text-align: center;
@@ -288,7 +314,7 @@ main section.prices .container .wrapper .prices-block .prices-block-left .prices
 main section.prices .container .wrapper .prices-block .helps-block-right {
   position: relative;
 }
-main section.prices .container .wrapper .prices-block .helps-block-right h2.helps-title {
+main section.prices .container .wrapper .prices-block .helps-block-right h3.helps-title {
   margin-top: 38px;
   font-size: 40px;
   width: 452px;
@@ -297,7 +323,7 @@ main section.prices .container .wrapper .prices-block .helps-block-right h2.help
   line-height: 50px;
   color: #010201;
 }
-main section.prices .container .wrapper .prices-block .helps-block-right h2.helps-title span {
+main section.prices .container .wrapper .prices-block .helps-block-right h3.helps-title span {
   color: #499A18;
 }
 main section.prices .container .wrapper .prices-block .helps-block-right a.btn {
@@ -318,6 +344,13 @@ main section.prices .container .wrapper .prices-block .helps-block-right a.btn {
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 51px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+main section.prices .container .wrapper .prices-block .helps-block-right a.btn:hover {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  color: #010201;
 }
 main section.prices .container .wrapper .prices-block .helps-block-right img.leafs-prices {
   position: absolute;
@@ -359,6 +392,7 @@ main section.contacts .container .wrapper .contact-wrap .input-icons input.input
   font-size: 20px;
   line-height: 40px;
   padding-left: 20px;
+  padding-right: 58px;
   letter-spacing: 0.05em;
   color: #717171;
   outline: none;
@@ -383,14 +417,20 @@ footer.footer .container .wrapper .footer-wrap {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-footer.footer .container .wrapper .footer-wrap .footer-data {
+footer.footer .container .wrapper .footer-wrap a {
+  text-decoration: none;
+}
+footer.footer .container .wrapper .footer-wrap a .footer-data {
   margin-top: 40px;
   margin-bottom: 40px;
   color: #000;
   font-size: 20px;
   line-height: 50px;
 }
-footer.footer .container .wrapper .footer-wrap p.footer-text {
+footer.footer .container .wrapper .footer-wrap a {
+  text-decoration: none;
+}
+footer.footer .container .wrapper .footer-wrap a p.footer-text {
   margin-top: 40px;
   font-size: 20px;
   line-height: 50px;
@@ -398,10 +438,19 @@ footer.footer .container .wrapper .footer-wrap p.footer-text {
 }
 footer.footer .container .wrapper .footer-wrap .footer-icons {
   margin-top: 51.67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-footer.footer .container .wrapper .footer-wrap .footer-icons img.icons {
+footer.footer .container .wrapper .footer-wrap .footer-icons ul {
+  list-style-type: none;
+}
+footer.footer .container .wrapper .footer-wrap .footer-icons ul li {
   margin-left: 30.68px;
 }
-footer.footer .container .wrapper .footer-wrap .footer-icons img:first-child {
+footer.footer .container .wrapper .footer-wrap .footer-icons ul li a img.icons {
+  margin-left: 30.68px;
+}
+footer.footer .container .wrapper .footer-wrap .footer-icons ul li a img:first-child {
   margin-left: 0;
 }
