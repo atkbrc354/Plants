@@ -1,0 +1,358 @@
+$green: #499A18
+$orange: #E06733
+$gray: #717171
+$dark-grey: #636060
+$Smoky-white: #EDF2EC
+$black: #010201
+
+@mixin inika-font
+    font-family: 'Inika', serif
+    font-weight: 400
+
+.container
+    width: 1440px
+    margin: auto
+
+.wrapper
+    max-width: 1219px
+    margin: 0 auto
+
+@mixin inter-font
+    font-family: 'Inter', sans-serif
+    font-weight: 400
+    color: $gray
+
+body
+    @include inter-font
+
+html
+    scroll-behavior: smooth
+
+*
+    padding: 0
+    margin: 0
+
+.header
+    background: $Smoky-white
+    .container
+        .wrapper
+            .header_wrapper
+                display: flex
+                .header_logo
+                    img.logo
+                        margin-top: 52px
+                nav
+                    margin-top: 52px
+                    margin-left: 688.83px
+                    ul
+                        display: flex
+                        li
+                            list-style-type: none
+                            padding-left: 46px
+                            a
+                                @include inika-font
+                                color: $black
+                                font-size: 16px
+                                text-decoration: none
+                                line-height: 50px
+                                transition: all 300ms
+                                &:hover
+                                    color: $orange
+                                    transition: all 300ms
+                        li:first-child
+                            padding-left: 0px
+                            a
+                                @include inika-font
+                                color: $black
+                                font-size: 16px
+                                text-decoration: none
+                                line-height: 50px
+                                transition: all 300ms
+                                &:hover
+                                    color: $orange
+                                    transition: all 300ms
+
+main
+    section.welcome
+        background: $Smoky-white
+        .container
+            .wrapper
+                .welcome_wrapper
+                    display: flex
+                    justify-content: space-between
+                    img.leafs
+                        margin-top: 62px
+                    .welcime-text
+                        h1.welcome-title
+                            font-weight: 700
+                            margin-top: 98px
+                            color: $gray
+                            width: 549px
+                            font-size: 45px
+                            line-height: 50px
+                            span
+                                color: $green
+                        p.welcome-description
+                            font-size: 20px
+                            line-height: 35px
+                            color: $dark-grey
+                            width: 525.44px
+                            margin-bottom: 48px
+                        a.btn
+                            color: #000
+                            display: inline-block
+                            border: 2px solid $orange
+                            text-decoration: none
+                            padding: 14px 27px
+                            font-size: 16px
+                            line-height: 20px
+                            margin-bottom: 94px
+                            transition: all 300ms
+                            &:hover
+                                transition: all 300ms
+                                color: $orange
+    section.about
+        .container
+            .wrapper
+                .about-block
+                    display: flex
+                    justify-content: space-between
+                    .about-text_block
+                        .about-title
+                            margin-top: 161px
+                            font-size: 40px
+                            @include inika-font
+                            line-height: 52px
+                            width: 463px
+                            color: $orange
+                            margin-bottom: 40px
+                            span
+                                color: $green
+                        p.about-description
+                            width: 605px
+                            font-size: 20px
+                            line-height: 30px
+                            color: $dark-grey
+                    .about-img
+                        img.about-img_houseplant
+                            margin-top: 93px
+                            margin-bottom: 94px
+    section.service
+        background: $Smoky-white
+        padding-bottom: 66px
+        .container
+            .wrapper
+                .service-block_top
+                    display: flex
+                    h2.service-title
+                        width: 306px
+                        margin-top: 40px
+                        @include inika-font
+                        color: $green
+                        font-size: 40px
+                        line-height: 52px
+                    .btn-block
+                        margin-left: 142px
+                        a.btn
+                            margin-top: 69px
+                            margin-left: 38px
+                            border-radius: 5px
+                            color: #000
+                            display: inline-block
+                            border: 1px solid $orange
+                            box-sizing: border-box
+                            text-decoration: none
+                            padding: 12px 40px
+                            font-size: 16px
+                            line-height: 20px
+                            margin-bottom: 105px
+                            transition: all 300ms
+                            &:hover
+                                transition: all 300ms
+                                color: $orange
+                        a:first-child
+                            margin-left: 0px
+                            transition: all 300ms
+                            &:hover
+                                transition: all 300ms
+                                color: $orange
+                .service-block_cards
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    .service-block_card
+                        width: 330px
+                        img.first
+                            border-radius: 20px 20px 0px 0px
+                        .service-block-text
+                            margin-top: -5px
+                            width: 330px
+                            border: 1px solid #E3E1D5
+                            border-radius: 0px 0px 20px 20px
+                            margin-bottom: 55px
+                            h4.service-card-title
+                                padding-top: 10px
+                                color: $orange
+                                text-align: center
+                                font-weight: 700
+                                font-size: 20px
+                                line-height: 20px
+                            p.service-card-description
+                                text-align: center
+                                margin-bottom: 36px
+    section.prices
+        .container
+            .wrapper
+                .prices-block
+                    display: flex
+                    justify-content: space-between
+                    .prices-block-left
+                        margin-bottom: 115px
+                        h2.price-title
+                            margin-top: 40px
+                            font-size: 40px
+                            color: $black
+                            font-weight: 700
+                            line-height: 50px
+                        .prices_item
+                            margin-top: 60px
+                            border: 1px solid #E3E1D5
+                            box-sizing: border-box
+                            width: 332px
+                            height: 282.01px
+                            border-radius: 20px
+                            display: flex
+                            flex-direction: column
+                            .block-btn
+                                margin-top: 34px
+                                a.btn
+                                    position: relative
+                                    margin-left: 41px
+                                    display: inline-block
+                                    box-sizing: border-box
+                                    width: 250px
+                                    font-weight: 700
+                                    text-decoration: none
+                                    color: #000
+                                    font-size: 20px
+                                    line-height: 20px
+                                    padding: 16px 110px 16px 16px
+                                    background: #EDF2EC
+                                    border-radius: 20px
+                                    margin-bottom: 32px
+
+                                    span
+                                        position: absolute
+                                        right: 40px
+                                        top: 17px
+                                a:last-child
+                                    margin-bottom: 0
+                    .helps-block-right
+                        position: relative
+                        h3.helps-title
+                            margin-top: 38px
+                            font-size: 40px
+                            width: 452px
+                            text-align: right
+                            font-weight: 700
+                            line-height: 50px
+                            color: $black
+                            span
+                                color: $green
+                        a.btn
+                            position: absolute
+                            right: 0px
+                            @include inika-font
+                            margin-top: 50px
+                            border-radius: 5px
+                            color: $orange
+                            display: inline-block
+                            border: 1px solid $orange
+                            box-sizing: border-box
+                            text-decoration: none
+                            padding: 12px 33.96px 12px 30px
+                            font-size: 20px
+                            line-height: 26px
+                            font-weight: 700
+                            margin-bottom: 51px
+                            transition: all 300ms
+                            &:hover
+                                transition: all 300ms
+                                color: $black
+                        img.leafs-prices
+                            position: absolute
+                            right: 0px
+                            margin-top: 127px
+    section.contacts
+        background: $Smoky-white
+        .container
+            .wrapper
+                .contact-wrap
+                    display: flex
+                    justify-content: space-between
+                    img.contact_woman
+                        margin-top: 53px
+                    h2.contacts-title
+                        margin-top: 60px
+                        @include inika-font
+                        font-size: 40px
+                        font-weight: 700
+                        line-height: 52px
+                        color: $green
+                    .input-icons
+                        input.input-city
+                            margin-top: 148px
+                            width: 450px
+                            height: 50px
+                            background: #D6E7D2
+                            border: 0px
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                            border-radius: 0px
+                            font-size: 20px
+                            line-height: 40px
+                            padding-left: 20px
+                            padding-right: 58px
+                            letter-spacing: 0.05em
+                            color: $gray
+                            outline: none
+                            input:placeholder
+                                color: $gray
+                        span
+                            position: relative
+                            right: 51px
+                            top: 165px
+                            img.accordion_btn
+                                position: absolute
+footer.footer
+    .container
+        .wrapper
+            .footer-wrap
+                display: flex
+                justify-content: space-between
+                a
+                    text-decoration: none
+                    .footer-data
+                        margin-top: 40px
+                        margin-bottom: 40px
+                        color: #000
+                        font-size: 20px
+                        line-height: 50px
+                a
+                    text-decoration: none
+                    p.footer-text
+                        margin-top: 40px
+                        font-size: 20px
+                        line-height: 50px
+                        color: #000
+                .footer-icons
+                    margin-top: 51.67px
+                    display: flex
+                    ul
+                        list-style-type: none
+                        li
+                            margin-left: 30.68px
+                            a
+                                img.icons
+                                    margin-left: 30.68px
+                                img:first-child
+                                    margin-left: 0
